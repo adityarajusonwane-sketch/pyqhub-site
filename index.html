@@ -8,16 +8,12 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
 body{font-family:'Plus Jakarta Sans',sans-serif;background:#f0f4ff;min-height:100vh;color:#1e293b;}
-
-/* NAV */
 nav{background:#1e40af;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(30,64,175,0.3);}
 .logo{color:#fff;font-size:1.2rem;font-weight:800;display:flex;align-items:center;gap:8px;}
 .logo span{color:#fbbf24;}
 .nav-right{display:flex;align-items:center;gap:10px;}
 .yt-nav{background:#FF0000;color:#fff;padding:8px 14px;border-radius:8px;font-size:0.8rem;font-weight:700;text-decoration:none;display:flex;align-items:center;gap:5px;}
 .wa-nav{background:#25D366;color:#fff;padding:8px 14px;border-radius:8px;font-size:0.8rem;font-weight:700;text-decoration:none;display:flex;align-items:center;gap:5px;}
-
-/* YOUTUBE BANNER */
 .yt-banner{background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);padding:16px 20px;border-bottom:3px solid #FF0000;}
 .yt-banner-inner{max-width:900px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;}
 .yt-banner-left{display:flex;align-items:center;gap:14px;}
@@ -27,8 +23,6 @@ nav{background:#1e40af;padding:14px 20px;display:flex;align-items:center;justify
 .yt-banner-sub strong{color:#fbbf24;}
 .yt-btn-big{background:#FF0000;color:#fff;padding:10px 18px;border-radius:10px;font-weight:800;font-size:0.85rem;text-decoration:none;display:flex;align-items:center;gap:7px;white-space:nowrap;transition:all 0.2s;flex-shrink:0;}
 .yt-btn-big:hover{background:#cc0000;transform:scale(1.04);}
-
-/* HERO */
 .hero{background:linear-gradient(135deg,#1e40af 0%,#1d4ed8 50%,#2563eb 100%);padding:40px 20px 32px;text-align:center;color:#fff;}
 .hero h1{font-size:clamp(1.5rem,4vw,2.4rem);font-weight:800;margin-bottom:10px;line-height:1.2;}
 .hero h1 span{color:#fbbf24;}
@@ -36,24 +30,15 @@ nav{background:#1e40af;padding:14px 20px;display:flex;align-items:center;justify
 .step-bar{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;}
 .step-pill{background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.25);color:#e0f2fe;padding:5px 14px;border-radius:100px;font-size:0.75rem;font-weight:600;}
 .step-pill.active{background:#fbbf24;color:#1e3a8a;border-color:#fbbf24;}
-
-/* MAIN CONTENT */
 .container{max-width:900px;margin:0 auto;padding:24px 16px;}
-
-/* BREADCRUMB */
 .breadcrumb{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:20px;font-size:0.82rem;color:#64748b;}
 .breadcrumb span{color:#1e40af;font-weight:600;cursor:pointer;}
 .breadcrumb span:hover{text-decoration:underline;}
 .bc-sep{color:#cbd5e1;}
-
-/* SECTION TITLE */
 .section-heading{font-size:1.2rem;font-weight:800;color:#1e293b;margin-bottom:6px;}
 .section-sub{color:#64748b;font-size:0.88rem;margin-bottom:20px;}
-
-/* GRID CARDS */
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px;}
 .grid-2{grid-template-columns:repeat(auto-fill,minmax(260px,1fr));}
-
 .card{background:#fff;border:2px solid #e2e8f0;border-radius:14px;padding:20px 16px;cursor:pointer;transition:all 0.2s;text-align:center;position:relative;overflow:hidden;}
 .card:hover{border-color:#1e40af;transform:translateY(-3px);box-shadow:0 8px 24px rgba(30,64,175,0.15);}
 .card-icon{font-size:2rem;margin-bottom:10px;}
@@ -63,8 +48,6 @@ nav{background:#1e40af;padding:14px 20px;display:flex;align-items:center;justify
 .card:hover .card-arrow{opacity:1;}
 .uni-card.sppu{border-left:4px solid #1e40af;}
 .uni-card.msbte{border-left:4px solid #059669;}
-
-/* SUBJECT CARD */
 .subject-card{background:#fff;border:2px solid #e2e8f0;border-radius:14px;padding:18px;cursor:pointer;transition:all 0.2s;display:flex;align-items:center;gap:14px;}
 .subject-card:hover{border-color:#1e40af;box-shadow:0 6px 20px rgba(30,64,175,0.12);transform:translateY(-2px);}
 .subject-num{background:#1e40af;color:#fff;width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:0.9rem;flex-shrink:0;}
@@ -72,8 +55,6 @@ nav{background:#1e40af;padding:14px 20px;display:flex;align-items:center;justify
 .subject-name{font-weight:700;font-size:0.95rem;color:#1e293b;}
 .subject-tag{font-size:0.72rem;color:#64748b;margin-top:2px;}
 .subject-price{font-weight:800;color:#1e40af;font-size:1rem;white-space:nowrap;}
-
-/* PRODUCT VIEW */
 .product-card{background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);}
 .product-banner{background:linear-gradient(135deg,#1e40af,#2563eb);padding:30px;color:#fff;text-align:center;position:relative;}
 .product-banner::after{content:'ALL PYQ SOLUTIONS';position:absolute;bottom:8px;right:14px;font-size:0.65rem;font-weight:800;letter-spacing:2px;color:rgba(255,255,255,0.3);}
@@ -93,19 +74,14 @@ nav{background:#1e40af;padding:14px 20px;display:flex;align-items:center;justify
 .product-features li{padding:8px 0;border-bottom:1px solid #f1f5f9;font-size:0.85rem;color:#475569;display:flex;align-items:center;gap:8px;}
 .product-features li:last-child{border:none;}
 .product-features li::before{content:'✓';color:#059669;font-weight:800;}
-
-/* YT strip inside product */
 .yt-inline{background:#fff5f5;border:2px solid #fecaca;border-radius:14px;padding:14px 18px;display:flex;align-items:center;gap:12px;margin-bottom:16px;text-decoration:none;transition:all 0.2s;}
 .yt-inline:hover{border-color:#FF0000;box-shadow:0 4px 12px rgba(255,0,0,0.1);}
 .yt-inline-icon{width:40px;height:40px;background:#FF0000;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;}
 .yt-inline-text .title{font-weight:700;font-size:0.88rem;color:#1e293b;}
 .yt-inline-text .sub{font-size:0.74rem;color:#64748b;margin-top:2px;}
 .yt-inline-btn{margin-left:auto;background:#FF0000;color:#fff;padding:7px 14px;border-radius:8px;font-weight:700;font-size:0.78rem;white-space:nowrap;flex-shrink:0;}
-
 .back-btn{display:flex;align-items:center;gap:6px;background:transparent;border:2px solid #e2e8f0;color:#64748b;padding:9px 18px;border-radius:10px;cursor:pointer;font-size:0.85rem;font-weight:600;font-family:'Plus Jakarta Sans',sans-serif;transition:all 0.2s;margin-bottom:20px;}
 .back-btn:hover{border-color:#1e40af;color:#1e40af;}
-
-/* FREE STUDY MATERIAL */
 .fsm-banner{background:linear-gradient(135deg,#7c3aed,#6d28d9);padding:30px;color:#fff;text-align:center;position:relative;}
 .fsm-banner::after{content:'FREE STUDY MATERIAL';position:absolute;bottom:8px;right:14px;font-size:0.65rem;font-weight:800;letter-spacing:2px;color:rgba(255,255,255,0.3);}
 .fsm-type-card{background:#fff;border:2px solid #e2e8f0;border-radius:14px;padding:20px 16px;cursor:pointer;transition:all 0.2s;text-align:center;position:relative;overflow:hidden;}
@@ -117,8 +93,6 @@ nav{background:#1e40af;padding:14px 20px;display:flex;align-items:center;justify
 .fsm-free-badge{display:inline-block;background:#dcfce7;color:#166534;padding:3px 10px;border-radius:100px;font-size:0.72rem;font-weight:700;margin-top:6px;}
 .fsm-dl-btn{background:linear-gradient(135deg,#7c3aed,#6d28d9);color:#fff;border:none;padding:16px;border-radius:14px;font-size:1rem;font-weight:800;cursor:pointer;width:100%;display:flex;align-items:center;justify-content:center;gap:10px;transition:all 0.2s;font-family:'Plus Jakarta Sans',sans-serif;margin-bottom:12px;text-decoration:none;}
 .fsm-dl-btn:hover{transform:scale(1.02);box-shadow:0 6px 20px rgba(124,58,237,0.35);}
-
-/* HOME SECTIONS */
 .home-sections{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:8px;}
 .home-section-card{background:#fff;border:2px solid #e2e8f0;border-radius:16px;padding:24px;cursor:pointer;transition:all 0.2s;text-align:center;}
 .home-section-card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,0.1);}
@@ -132,13 +106,9 @@ nav{background:#1e40af;padding:14px 20px;display:flex;align-items:center;justify
 .hsc-btn{margin-top:14px;display:inline-block;padding:8px 18px;border-radius:8px;font-weight:700;font-size:0.82rem;}
 .hsc-btn.pyq{background:#1e40af;color:#fff;}
 .hsc-btn.fsm{background:#7c3aed;color:#fff;}
-
-/* SCREEN TOGGLE */
 .screen{display:none;animation:fadeIn 0.3s ease;}
 .screen.active{display:block;}
 @keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
-
-/* FOOTER */
 .footer{background:#1e293b;padding:30px 20px;text-align:center;margin-top:40px;}
 .footer-logo{color:#fff;font-size:1.1rem;font-weight:800;margin-bottom:10px;}
 .footer-logo span{color:#fbbf24;}
@@ -148,11 +118,11 @@ nav{background:#1e40af;padding:14px 20px;display:flex;align-items:center;justify
 .footer-links a{color:#94a3b8;font-size:0.82rem;text-decoration:none;transition:color 0.2s;}
 .footer-links a:hover{color:#fff;}
 .footer-copy{color:#475569;font-size:0.75rem;}
-
-/* WA FLOAT only */
 .wa-float{position:fixed;bottom:20px;right:16px;background:#25D366;color:#fff;padding:11px 16px;border-radius:100px;font-weight:700;font-size:0.82rem;text-decoration:none;display:flex;align-items:center;gap:7px;box-shadow:0 4px 16px rgba(37,211,102,0.4);z-index:99;transition:transform 0.2s;}
 .wa-float:hover{transform:scale(1.05);}
-
+/* 2024 pattern single exam card */
+.exam-single-card{background:#fff;border:2px solid #e2e8f0;border-radius:14px;padding:28px 20px;cursor:pointer;transition:all 0.2s;text-align:center;position:relative;overflow:hidden;max-width:340px;margin:0 auto;}
+.exam-single-card:hover{border-color:#1e40af;transform:translateY(-3px);box-shadow:0 8px 24px rgba(30,64,175,0.15);}
 @media(max-width:500px){
   .grid{grid-template-columns:1fr 1fr;}
   .home-sections{grid-template-columns:1fr;}
@@ -163,7 +133,6 @@ nav{background:#1e40af;padding:14px 20px;display:flex;align-items:center;justify
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
   <div class="logo">📚 PYQ<span>Hub</span></div>
   <div class="nav-right">
@@ -172,7 +141,6 @@ nav{background:#1e40af;padding:14px 20px;display:flex;align-items:center;justify
   </div>
 </nav>
 
-<!-- YOUTUBE BANNER -->
 <div class="yt-banner">
   <div class="yt-banner-inner">
     <div class="yt-banner-left">
@@ -186,7 +154,6 @@ nav{background:#1e40af;padding:14px 20px;display:flex;align-items:center;justify
   </div>
 </div>
 
-<!-- HERO -->
 <div class="hero">
   <h1>Get <span>PYQ Solutions</span><br/>&amp; Free Study Material</h1>
   <p>Select your section → university → branch → pattern → year → subject</p>
@@ -222,8 +189,6 @@ nav{background:#1e40af;padding:14px 20px;display:flex;align-items:center;justify
       </div>
     </div>
   </div>
-
-  <!-- ========== PYQ FLOW ========== -->
 
   <!-- PYQ S1: UNIVERSITY -->
   <div class="screen" id="s1">
@@ -271,11 +236,11 @@ nav{background:#1e40af;padding:14px 20px;display:flex;align-items:center;justify
     <div class="section-sub">SPPU – Select your exam pattern year</div>
     <div class="grid grid-2">
       <div class="card" onclick="choose('pattern','2019 Pattern','s4')"><div class="card-icon">📅</div><div class="card-title">2019 Pattern</div><div class="card-sub">Old curriculum (pre-2024)</div><div class="card-arrow">→</div></div>
-      <div class="card" onclick="choose('pattern','2024 Pattern','s4')"><div class="card-icon">🆕</div><div class="card-title">2024 Pattern</div><div class="card-sub">New curriculum (2024 onwards)</div><div class="card-arrow">→</div></div>
+      <div class="card" onclick="choose('pattern','2024 Pattern','s4-2024')"><div class="card-icon">🆕</div><div class="card-title">2024 Pattern</div><div class="card-sub">New curriculum (2024 onwards)</div><div class="card-arrow">→</div></div>
     </div>
   </div>
 
-  <!-- PYQ S4: YEAR -->
+  <!-- PYQ S4: YEAR (2019 Pattern - unchanged) -->
   <div class="screen" id="s4">
     <button class="back-btn" onclick="goBack()">← Back</button>
     <div class="section-heading">📅 Choose Your Year</div>
@@ -288,7 +253,20 @@ nav{background:#1e40af;padding:14px 20px;display:flex;align-items:center;justify
     </div>
   </div>
 
-  <!-- PYQ S5: EXAM TYPE -->
+  <!-- PYQ S4: YEAR (2024 Pattern - NEW) -->
+  <div class="screen" id="s4-2024">
+    <button class="back-btn" onclick="goBack()">← Back</button>
+    <div class="section-heading">📅 Choose Your Year</div>
+    <div class="section-sub">SPPU 2024 Pattern – Select your academic year</div>
+    <div class="grid">
+      <div class="card" onclick="choose('year','First Year','s5-2024')"><div class="card-icon">1️⃣</div><div class="card-title">First Year (FE)</div><div class="card-sub">Sem 1 &amp; 2</div><div class="card-arrow">→</div></div>
+      <div class="card" onclick="choose('year','Second Year','s5-2024')"><div class="card-icon">2️⃣</div><div class="card-title">Second Year (SE)</div><div class="card-sub">Sem 3 &amp; 4</div><div class="card-arrow">→</div></div>
+      <div class="card" onclick="choose('year','Third Year','s5-2024')"><div class="card-icon">3️⃣</div><div class="card-title">Third Year (TE)</div><div class="card-sub">Sem 5 &amp; 6</div><div class="card-arrow">→</div></div>
+      <div class="card" onclick="choose('year','Fourth Year','s5-2024')"><div class="card-icon">4️⃣</div><div class="card-title">Fourth Year (BE)</div><div class="card-sub">Sem 7 &amp; 8</div><div class="card-arrow">→</div></div>
+    </div>
+  </div>
+
+  <!-- PYQ S5: EXAM TYPE (2019 Pattern only) -->
   <div class="screen" id="s5">
     <button class="back-btn" onclick="goBack()">← Back</button>
     <div class="section-heading">📝 Choose Exam Type</div>
@@ -307,6 +285,23 @@ nav{background:#1e40af;padding:14px 20px;display:flex;align-items:center;justify
         <div class="card-sub">End-Semester Exam · 70 Marks</div>
         <div style="margin-top:10px;background:#dcfce7;color:#166534;padding:4px 10px;border-radius:6px;font-size:0.75rem;font-weight:700;display:inline-block;">PDF Price: ₹49</div>
         <div class="card-arrow">→</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PYQ S5: EXAM TYPE (2024 Pattern - Single Exam) NEW -->
+  <div class="screen" id="s5-2024">
+    <button class="back-btn" onclick="goBack()">← Back</button>
+    <div class="section-heading">📝 Exam Type – SPPU 2024 Pattern</div>
+    <div class="section-sub">SPPU 2024 Pattern has a single unified University Exam</div>
+    <div style="display:flex;justify-content:center;">
+      <div class="exam-single-card" onclick="choose('examtype','SPPU Exam','s6')">
+        <div class="card-icon">🎓</div>
+        <div class="card-title" style="font-size:1.1rem;">SPPU Exam</div>
+        <div class="card-sub" style="margin-top:6px;">University Semester Exam · 2024 Pattern</div>
+        <div style="margin-top:14px;background:#dbeafe;color:#1e40af;padding:6px 16px;border-radius:8px;font-size:0.85rem;font-weight:800;display:inline-block;">PDF Price: ₹49</div>
+        <div style="margin-top:10px;font-size:0.75rem;color:#64748b;">Complete PYQ Solution PDF</div>
+        <div class="card-arrow" style="opacity:1;">→</div>
       </div>
     </div>
   </div>
@@ -350,7 +345,6 @@ nav{background:#1e40af;padding:14px 20px;display:flex;align-items:center;justify
         </div>
       </div>
       <div class="product-body">
-        <!-- YouTube inline box -->
         <a class="yt-inline" href="https://youtube.com/@kesbhat?si=BQN7EoUtV0sN5TTE" target="_blank">
           <div class="yt-inline-icon">▶</div>
           <div class="yt-inline-text">
@@ -522,9 +516,8 @@ nav{background:#1e40af;padding:14px 20px;display:flex;align-items:center;justify
     </div>
   </div>
 
-</div><!-- /container -->
+</div>
 
-<!-- FOOTER -->
 <div class="footer">
   <div class="footer-logo">📚 PYQ<span>Hub</span></div>
   <p style="color:#64748b;font-size:0.82rem;margin-bottom:16px;">SPPU &amp; MSBTE PYQ Solutions &amp; Free Study Material</p>
@@ -537,22 +530,20 @@ nav{background:#1e40af;padding:14px 20px;display:flex;align-items:center;justify
   <div class="footer-copy">© 2025 PYQHub · Not officially affiliated with SPPU or MSBTE</div>
 </div>
 
-<!-- WA FLOAT -->
 <a class="wa-float" href="https://wa.me/917823063429" target="_blank">💬 Help?</a>
 
 <script>
 const YT = 'https://youtube.com/@kesbhat?si=BQN7EoUtV0sN5TTE';
 
-// ── STATE ─────────────────────────────────────────
 const state    = {section:'', uni:'', branch:'', pattern:'', year:'', examtype:'', subject:''};
 const fsmState = {uni:'', branch:'', pattern:'', year:'', subject:'', material:''};
 let screenHistory = ['s0'];
 
-// ── SUBJECT DATA (PYQ) ────────────────────────────
-// Format: 'uni|branch|pattern|year' → subjects array (same for Insem & Endsem)
+// ── SUBJECT DATA ──────────────────────────────────
 const subjects = {
 
-  /* ===== FIRST YEAR (all branches common) ===== */
+  // ===== 2019 PATTERN (UNCHANGED) =====
+
   'SPPU|Computer Science|2019 Pattern|First Year': [
     'Engineering Mathematics I','Engineering Mathematics II',
     'Engineering Physics','Engineering Chemistry',
@@ -584,183 +575,355 @@ const subjects = {
     'Programming in C','Engineering Drawing'
   ],
 
-  /* ===== COMPUTER SCIENCE – 2019 PATTERN ===== */
   'SPPU|Computer Science|2019 Pattern|Second Year': [
-    'Discrete Mathematics',
-    'Fundamentals of Data Structures',
-    'Object Oriented Programming',
-    'Computer Graphics',
-    'Digital Electronics and Logic Design',
-    'Engineering Mathematics III',
-    'Data Structures & Algorithms',
-    'Software Engineering',
-    'Microprocessor',
-    'Principles of Programming Languages'
+    'Discrete Mathematics','Fundamentals of Data Structures',
+    'Object Oriented Programming','Computer Graphics',
+    'Digital Electronics and Logic Design','Engineering Mathematics III',
+    'Data Structures & Algorithms','Software Engineering',
+    'Microprocessor','Principles of Programming Languages'
   ],
   'SPPU|Computer Science|2019 Pattern|Third Year': [
-    'Theory of Computation',
-    'Database Management Systems',
-    'Computer Networks & Security',
-    'System Programming and Operating System',
-    'Internet of Things and Embedded Systems',
-    'Software Project Management',
-    'Data Science and Big Data Analysis',
-    'Web Technology',
-    'Artificial Intelligence',
-    'Cloud Computing'
+    'Theory of Computation','Database Management Systems',
+    'Computer Networks & Security','System Programming and Operating System',
+    'Internet of Things and Embedded Systems','Software Project Management',
+    'Data Science and Big Data Analysis','Web Technology',
+    'Artificial Intelligence','Cloud Computing'
   ],
   'SPPU|Computer Science|2019 Pattern|Fourth Year': [
-    'Design and Analysis of Algorithms',
-    'Machine Learning',
-    'Blockchain Technology',
-    'Cyber Security and Digital Forensics',
-    'Software Testing and Quality Assurance',
-    'High Performance Computing',
-    'Business Intelligence',
-    'Mobile Computing',
-    'Deep Learning'
+    'Design and Analysis of Algorithms','Machine Learning',
+    'Blockchain Technology','Cyber Security and Digital Forensics',
+    'Software Testing and Quality Assurance','High Performance Computing',
+    'Business Intelligence','Mobile Computing','Deep Learning'
   ],
 
-  /* ===== IT ENGINEERING – 2019 PATTERN ===== */
   'SPPU|IT Engineering|2019 Pattern|Second Year': [
-    'Discrete Mathematics',
-    'Fundamentals of Data Structures',
-    'Object Oriented Programming',
-    'Computer Graphics',
-    'Digital Electronics and Logic Design',
-    'Engineering Mathematics III',
-    'Data Structures & Algorithms',
-    'Software Engineering',
-    'Microprocessor',
-    'Principles of Programming Languages'
+    'Discrete Mathematics','Fundamentals of Data Structures',
+    'Object Oriented Programming','Computer Graphics',
+    'Digital Electronics and Logic Design','Engineering Mathematics III',
+    'Data Structures & Algorithms','Software Engineering',
+    'Microprocessor','Principles of Programming Languages'
   ],
   'SPPU|IT Engineering|2019 Pattern|Third Year': [
-    'Theory of Computation',
-    'Database Management Systems',
-    'Computer Networks & Security',
-    'System Programming and Operating System',
-    'Internet of Things and Embedded Systems',
-    'Software Project Management',
-    'Data Science and Big Data Analysis',
-    'Web Technology',
-    'Artificial Intelligence',
-    'Cloud Computing'
+    'Theory of Computation','Database Management Systems',
+    'Computer Networks & Security','System Programming and Operating System',
+    'Internet of Things and Embedded Systems','Software Project Management',
+    'Data Science and Big Data Analysis','Web Technology',
+    'Artificial Intelligence','Cloud Computing'
   ],
   'SPPU|IT Engineering|2019 Pattern|Fourth Year': [
-    'Design and Analysis of Algorithms',
-    'Machine Learning',
-    'Blockchain Technology',
-    'Cyber Security and Digital Forensics',
-    'Software Testing and Quality Assurance',
-    'High Performance Computing',
-    'Business Intelligence',
-    'Mobile Computing'
+    'Design and Analysis of Algorithms','Machine Learning',
+    'Blockchain Technology','Cyber Security and Digital Forensics',
+    'Software Testing and Quality Assurance','High Performance Computing',
+    'Business Intelligence','Mobile Computing'
   ],
 
-  /* ===== ELECTRONICS & TC – 2019 PATTERN ===== */
   'SPPU|Electronics & TC|2019 Pattern|Second Year': [
-    'Engineering Mathematics III',
-    'Electronic Circuits',
-    'Digital Circuits',
-    'Electrical Circuits',
-    'Data Structures',
-    'Signals & Systems',
-    'Control Systems',
-    'Principles of Communication Systems',
-    'Object Oriented Programming'
+    'Engineering Mathematics III','Electronic Circuits',
+    'Digital Circuits','Electrical Circuits','Data Structures',
+    'Signals & Systems','Control Systems',
+    'Principles of Communication Systems','Object Oriented Programming'
   ],
   'SPPU|Electronics & TC|2019 Pattern|Third Year': [
-    'Digital Communication',
-    'Electromagnetic Field Theory',
-    'Database Management',
-    'Microcontrollers',
-    'Digital Signal Processing',
-    'Fundamentals of Java Programming',
-    'Computer Networks',
-    'Cellular Networks',
-    'Project Management',
-    'Power Devices and Circuits',
-    'Embedded Processors',
-    'Network Security'
+    'Digital Communication','Electromagnetic Field Theory',
+    'Database Management','Microcontrollers','Digital Signal Processing',
+    'Fundamentals of Java Programming','Computer Networks',
+    'Cellular Networks','Project Management',
+    'Power Devices and Circuits','Embedded Processors','Network Security'
   ],
   'SPPU|Electronics & TC|2019 Pattern|Fourth Year': [
-    'Advanced Java Programming',
-    'VLSI Design',
-    'Wireless Communication',
-    'Digital Image Processing',
-    'Robotics',
-    'Machine Learning',
-    'IoT Applications',
-    'RF and Microwave Engineering'
+    'Advanced Java Programming','VLSI Design','Wireless Communication',
+    'Digital Image Processing','Robotics','Machine Learning',
+    'IoT Applications','RF and Microwave Engineering'
   ],
 
-  /* ===== MECHANICAL ENGINEERING – 2019 PATTERN ===== */
   'SPPU|Mechanical Engineering|2019 Pattern|Second Year': [
-    'Engineering Mathematics III',
-    'Strength of Materials',
-    'Thermodynamics',
-    'Manufacturing Processes',
-    'Theory of Machines',
-    'Engineering Mathematics IV',
-    'Fluid Mechanics',
-    'Machine Design I'
+    'Engineering Mathematics III','Strength of Materials',
+    'Thermodynamics','Manufacturing Processes',
+    'Theory of Machines','Engineering Mathematics IV',
+    'Fluid Mechanics','Machine Design I'
   ],
   'SPPU|Mechanical Engineering|2019 Pattern|Third Year': [
-    'Heat Transfer',
-    'Design of Machine Elements',
-    'Manufacturing Engineering',
-    'Metrology and Quality Control',
-    'Dynamics of Machinery',
-    'Industrial Engineering',
-    'Mechatronics',
-    'CAD/CAM'
+    'Heat Transfer','Design of Machine Elements',
+    'Manufacturing Engineering','Metrology and Quality Control',
+    'Dynamics of Machinery','Industrial Engineering','Mechatronics','CAD/CAM'
   ],
   'SPPU|Mechanical Engineering|2019 Pattern|Fourth Year': [
-    'Refrigeration and Air Conditioning',
-    'Power Plant Engineering',
-    'Operations Research',
-    'Machine Design II',
-    'Finite Element Analysis',
-    'Advanced Manufacturing Processes',
-    'Automobile Engineering'
+    'Refrigeration and Air Conditioning','Power Plant Engineering',
+    'Operations Research','Machine Design II',
+    'Finite Element Analysis','Advanced Manufacturing Processes','Automobile Engineering'
   ],
 
-  /* ===== CIVIL ENGINEERING – 2019 PATTERN ===== */
   'SPPU|Civil Engineering|2019 Pattern|Second Year': [
-    'Engineering Mathematics III',
-    'Strength of Materials',
-    'Fluid Mechanics',
-    'Surveying I',
-    'Engineering Geology',
-    'Engineering Mathematics IV',
-    'Structural Analysis I',
-    'Surveying II',
-    'Building Construction Technology'
+    'Engineering Mathematics III','Strength of Materials',
+    'Fluid Mechanics','Surveying I','Engineering Geology',
+    'Engineering Mathematics IV','Structural Analysis I',
+    'Surveying II','Building Construction Technology'
   ],
   'SPPU|Civil Engineering|2019 Pattern|Third Year': [
-    'Structural Analysis II',
-    'Geotechnical Engineering I',
-    'Hydraulics and Hydraulic Machines',
-    'Transportation Engineering I',
-    'Environmental Engineering I',
-    'Design of Concrete Structures',
-    'Geotechnical Engineering II',
-    'Transportation Engineering II',
+    'Structural Analysis II','Geotechnical Engineering I',
+    'Hydraulics and Hydraulic Machines','Transportation Engineering I',
+    'Environmental Engineering I','Design of Concrete Structures',
+    'Geotechnical Engineering II','Transportation Engineering II',
     'Environmental Engineering II'
   ],
   'SPPU|Civil Engineering|2019 Pattern|Fourth Year': [
-    'Design of Steel Structures',
-    'Project Management',
-    'Water Resources Engineering',
-    'Elective I','Elective II',
+    'Design of Steel Structures','Project Management',
+    'Water Resources Engineering','Elective I','Elective II',
     'Construction Technology and Management',
-    'Advanced Concrete Technology',
-    'Remote Sensing and GIS'
+    'Advanced Concrete Technology','Remote Sensing and GIS'
+  ],
+
+  // ===== 2024 PATTERN – SPPU (New Curriculum) =====
+
+  // --- FIRST YEAR (Common for all branches) ---
+  'SPPU|Computer Science|2024 Pattern|First Year': [
+    'Engineering Mathematics I (Calculus and Linear Algebra)',
+    'Engineering Physics',
+    'Engineering Chemistry',
+    'Basic Electronics Engineering',
+    'Programming and Problem Solving (C Language)',
+    'Engineering Mathematics II (Transform Techniques and Probability)',
+    'Engineering Mechanics',
+    'Basic Electrical Engineering',
+    'Engineering Drawing and Graphics',
+    'Workshop Practice'
+  ],
+  'SPPU|IT Engineering|2024 Pattern|First Year': [
+    'Engineering Mathematics I (Calculus and Linear Algebra)',
+    'Engineering Physics',
+    'Engineering Chemistry',
+    'Basic Electronics Engineering',
+    'Programming and Problem Solving (C Language)',
+    'Engineering Mathematics II (Transform Techniques and Probability)',
+    'Engineering Mechanics',
+    'Basic Electrical Engineering',
+    'Engineering Drawing and Graphics',
+    'Workshop Practice'
+  ],
+  'SPPU|Electronics & TC|2024 Pattern|First Year': [
+    'Engineering Mathematics I (Calculus and Linear Algebra)',
+    'Engineering Physics',
+    'Engineering Chemistry',
+    'Basic Electronics Engineering',
+    'Programming and Problem Solving (C Language)',
+    'Engineering Mathematics II (Transform Techniques and Probability)',
+    'Engineering Mechanics',
+    'Basic Electrical Engineering',
+    'Engineering Drawing and Graphics',
+    'Workshop Practice'
+  ],
+  'SPPU|Mechanical Engineering|2024 Pattern|First Year': [
+    'Engineering Mathematics I (Calculus and Linear Algebra)',
+    'Engineering Physics',
+    'Engineering Chemistry',
+    'Basic Electronics Engineering',
+    'Programming and Problem Solving (C Language)',
+    'Engineering Mathematics II (Transform Techniques and Probability)',
+    'Engineering Mechanics',
+    'Basic Electrical Engineering',
+    'Engineering Drawing and Graphics',
+    'Workshop Practice'
+  ],
+  'SPPU|Civil Engineering|2024 Pattern|First Year': [
+    'Engineering Mathematics I (Calculus and Linear Algebra)',
+    'Engineering Physics',
+    'Engineering Chemistry',
+    'Basic Electronics Engineering',
+    'Programming and Problem Solving (C Language)',
+    'Engineering Mathematics II (Transform Techniques and Probability)',
+    'Engineering Mechanics',
+    'Basic Electrical Engineering',
+    'Engineering Drawing and Graphics',
+    'Workshop Practice'
+  ],
+
+  // --- COMPUTER SCIENCE – 2024 PATTERN ---
+  'SPPU|Computer Science|2024 Pattern|Second Year': [
+    'Discrete Mathematics and Graph Theory',
+    'Data Structures',
+    'Object Oriented Programming with Java',
+    'Digital Logic and Computer Organization',
+    'Engineering Mathematics III (Numerical Methods)',
+    'Computer Networks',
+    'Database Management Systems',
+    'Operating Systems',
+    'Software Engineering',
+    'Design and Analysis of Algorithms'
+  ],
+  'SPPU|Computer Science|2024 Pattern|Third Year': [
+    'Theory of Computation',
+    'Artificial Intelligence and Machine Learning',
+    'Web Technology and Development',
+    'Cloud Computing and Services',
+    'Cyber Security',
+    'Data Science',
+    'Internet of Things',
+    'System Programming',
+    'Professional Ethics and Human Values',
+    'Open Elective I'
+  ],
+  'SPPU|Computer Science|2024 Pattern|Fourth Year': [
+    'Deep Learning',
+    'Blockchain Technology and Applications',
+    'High Performance Computing',
+    'Software Testing and Quality Assurance',
+    'Business Intelligence and Analytics',
+    'Mobile Application Development',
+    'Project Management and Entrepreneurship',
+    'Open Elective II',
+    'Elective III',
+    'Project Work'
+  ],
+
+  // --- IT ENGINEERING – 2024 PATTERN ---
+  'SPPU|IT Engineering|2024 Pattern|Second Year': [
+    'Discrete Mathematics',
+    'Data Structures and Algorithms',
+    'Object Oriented Programming with Java',
+    'Digital Logic Design',
+    'Engineering Mathematics III',
+    'Computer Networks',
+    'Database Management Systems',
+    'Operating Systems',
+    'Software Engineering and Project Management',
+    'Web Application Development'
+  ],
+  'SPPU|IT Engineering|2024 Pattern|Third Year': [
+    'Theory of Computation',
+    'Artificial Intelligence',
+    'Machine Learning',
+    'Cloud Computing',
+    'Cyber Security and Ethical Hacking',
+    'Data Analytics',
+    'Internet of Things and Embedded Systems',
+    'System Administration',
+    'Open Elective I',
+    'Professional Ethics'
+  ],
+  'SPPU|IT Engineering|2024 Pattern|Fourth Year': [
+    'Deep Learning and NLP',
+    'Blockchain and Distributed Systems',
+    'DevOps and Agile Practices',
+    'Information Security Management',
+    'Business Analytics',
+    'Mobile Computing',
+    'Open Elective II',
+    'Elective III',
+    'Project Work'
+  ],
+
+  // --- ELECTRONICS & TC – 2024 PATTERN ---
+  'SPPU|Electronics & TC|2024 Pattern|Second Year': [
+    'Engineering Mathematics III',
+    'Electronic Devices and Circuits',
+    'Digital Electronics',
+    'Signals and Systems',
+    'Electrical Circuits and Machines',
+    'Object Oriented Programming',
+    'Data Structures',
+    'Control Systems',
+    'Principles of Communication',
+    'Electromagnetic Engineering'
+  ],
+  'SPPU|Electronics & TC|2024 Pattern|Third Year': [
+    'Digital Communication Systems',
+    'Microcontrollers and Embedded Systems',
+    'Digital Signal Processing',
+    'VLSI Design',
+    'Computer Networks',
+    'RF and Microwave Engineering',
+    'Power Electronics',
+    'Wireless Communication',
+    'Open Elective I',
+    'Project Management'
+  ],
+  'SPPU|Electronics & TC|2024 Pattern|Fourth Year': [
+    'Advanced VLSI Design',
+    'Digital Image Processing',
+    'Machine Learning for Signal Processing',
+    'IoT and Applications',
+    'Antenna and Wave Propagation',
+    'Robotics and Automation',
+    'Open Elective II',
+    'Elective III',
+    'Project Work'
+  ],
+
+  // --- MECHANICAL ENGINEERING – 2024 PATTERN ---
+  'SPPU|Mechanical Engineering|2024 Pattern|Second Year': [
+    'Engineering Mathematics III',
+    'Strength of Materials',
+    'Thermodynamics',
+    'Manufacturing Processes I',
+    'Theory of Machines',
+    'Engineering Mathematics IV',
+    'Fluid Mechanics',
+    'Material Science',
+    'Machine Drawing',
+    'Manufacturing Processes II'
+  ],
+  'SPPU|Mechanical Engineering|2024 Pattern|Third Year': [
+    'Heat Transfer',
+    'Machine Design I',
+    'Dynamics of Machinery',
+    'Metrology and Quality Engineering',
+    'Industrial Engineering and Management',
+    'Mechatronics and Control Systems',
+    'CAD/CAM/CAE',
+    'Finite Element Analysis',
+    'Open Elective I',
+    'Project Management'
+  ],
+  'SPPU|Mechanical Engineering|2024 Pattern|Fourth Year': [
+    'Refrigeration and Air Conditioning',
+    'Power Plant Engineering',
+    'Machine Design II',
+    'Advanced Manufacturing Technologies',
+    'Operations Research',
+    'Automobile Engineering',
+    'Renewable Energy Systems',
+    'Open Elective II',
+    'Elective III',
+    'Project Work'
+  ],
+
+  // --- CIVIL ENGINEERING – 2024 PATTERN ---
+  'SPPU|Civil Engineering|2024 Pattern|Second Year': [
+    'Engineering Mathematics III',
+    'Strength of Materials',
+    'Fluid Mechanics',
+    'Engineering Geology',
+    'Surveying',
+    'Engineering Mathematics IV',
+    'Structural Analysis',
+    'Building Materials and Construction Technology',
+    'Transportation Engineering',
+    'Environmental Engineering'
+  ],
+  'SPPU|Civil Engineering|2024 Pattern|Third Year': [
+    'Structural Design I (RCC)',
+    'Geotechnical Engineering',
+    'Hydraulics and Hydraulic Machines',
+    'Transportation Engineering II',
+    'Environmental Engineering II',
+    'Estimation Costing and Valuation',
+    'Remote Sensing and GIS',
+    'Irrigation Engineering',
+    'Open Elective I',
+    'Project Management'
+  ],
+  'SPPU|Civil Engineering|2024 Pattern|Fourth Year': [
+    'Structural Design II (Steel)',
+    'Foundation Engineering',
+    'Water Resources Engineering',
+    'Smart Infrastructure and Urban Planning',
+    'Construction Management',
+    'Quantity Surveying',
+    'Open Elective II',
+    'Elective III',
+    'Project Work'
   ],
 };
-
-// ── FSM SUBJECTS (same data, reused from subjects for same key) ──────────────
-// We use subjects data for FSM too
 
 // ── SECTION CHOICE ────────────────────────────────
 function chooseSection(section, nextScreen) {
@@ -823,7 +986,6 @@ function jumpToHome() {
 function updateBreadcrumb() {
   const bc = document.getElementById('breadcrumb');
   const parts = [`<span onclick="jumpToHome()">🏠 Home</span>`];
-
   if (state.section === 'pyq') {
     parts.push(`<span class="bc-sep">›</span><span>PYQ Solutions</span>`);
     if (state.uni) parts.push(`<span class="bc-sep">›</span><span>${state.uni}</span>`);
@@ -864,7 +1026,12 @@ function loadSubjects() {
   const key = `${state.uni}|${state.branch}|${state.pattern}|${state.year}`;
   const list = subjects[key] || [];
   const container = document.getElementById('subjectList');
-  const price = state.examtype === 'Insem' ? '₹19' : '₹49';
+
+  // Price logic: 2024 pattern always ₹49, 2019 pattern depends on exam type
+  let price = '₹49';
+  if (state.pattern === '2019 Pattern') {
+    price = state.examtype === 'Insem' ? '₹19' : '₹49';
+  }
 
   document.getElementById('s6-sub').textContent =
     `${state.uni} · ${state.branch} · ${state.pattern} · ${state.year} · ${state.examtype} — Click subject to buy`;
@@ -880,7 +1047,7 @@ function loadSubjects() {
   }
 
   container.innerHTML = list.map((subj, i) => `
-    <div class="subject-card" onclick="openProduct('${subj.replace(/'/g,"\\'")}')">
+    <div class="subject-card" onclick="openProduct('${subj.replace(/'/g,"\\'").replace(/"/g,'&quot;')}')">
       <div class="subject-num">${i+1}</div>
       <div class="subject-info">
         <div class="subject-name">${subj}</div>
@@ -894,22 +1061,32 @@ function loadSubjects() {
 // ── OPEN PYQ PRODUCT PAGE ─────────────────────────
 function openProduct(subj) {
   state.subject = subj;
+  const is2024 = state.pattern === '2024 Pattern';
   const isInsem = state.examtype === 'Insem';
-  const price    = isInsem ? '₹19' : '₹49';
-  const oldPrice = isInsem ? '₹99' : '₹149';
-  const save     = isInsem ? 'You save ₹80 (81% OFF)' : 'You save ₹100 (67% OFF)';
+
+  let price, oldPrice, save, examInfo;
+  if (is2024) {
+    price    = '₹49';
+    oldPrice = '₹149';
+    save     = 'You save ₹100 (67% OFF)';
+    examInfo = 'SPPU University Exam · 2024 Pattern';
+  } else {
+    price    = isInsem ? '₹19' : '₹49';
+    oldPrice = isInsem ? '₹99' : '₹149';
+    save     = isInsem ? 'You save ₹80 (81% OFF)' : 'You save ₹100 (67% OFF)';
+    examInfo = isInsem ? 'Insem paper · 30 Marks · 1 Hour exam' : 'Endsem paper · 70 Marks · 3 Hours exam';
+  }
 
   document.getElementById('p-univ').textContent = state.uni;
   document.getElementById('p-subject').textContent = subj;
   document.getElementById('p-branch-tag').textContent = state.branch;
   document.getElementById('p-pattern-tag').textContent = state.pattern;
   document.getElementById('p-year-tag').textContent = state.year;
-  document.getElementById('p-exam-tag').textContent = state.examtype + ' Exam';
+  document.getElementById('p-exam-tag').textContent = state.examtype;
   document.getElementById('p-price').textContent = price;
   document.getElementById('p-old').textContent = 'MRP: ' + oldPrice;
   document.getElementById('p-save').textContent = save;
-  document.getElementById('pf-exam').textContent =
-    isInsem ? 'Insem paper · 30 Marks · 1 Hour exam' : 'Endsem paper · 70 Marks · 3 Hours exam';
+  document.getElementById('pf-exam').textContent = examInfo;
 
   showScreen('s7');
   updateBreadcrumb();
@@ -917,7 +1094,8 @@ function openProduct(subj) {
 
 // ── BUY NOW ──────────────────────────────────────
 function buyNow() {
-  const price = state.examtype === 'Insem' ? '₹19' : '₹49';
+  const is2024 = state.pattern === '2024 Pattern';
+  const price = is2024 ? '₹49' : (state.examtype === 'Insem' ? '₹19' : '₹49');
   const msg = `Hi! I want to buy PYQ Solution PDF 📄\n\n📚 Subject: *${state.subject}*\n🏫 University: ${state.uni}\n📂 Branch: ${state.branch}\n📋 Pattern: ${state.pattern}\n📅 Year: ${state.year}\n📝 Exam Type: ${state.examtype}\n💰 Price: *${price}*\n\nPlease share payment details.`;
   window.open(`https://wa.me/917823063429?text=${encodeURIComponent(msg)}`, '_blank');
 }
@@ -925,7 +1103,6 @@ function buyNow() {
 // ── LOAD FSM SUBJECTS ─────────────────────────────
 function loadFsmSubjects() {
   const key = `${fsmState.uni}|${fsmState.branch}|${fsmState.pattern}|${fsmState.year}`;
-  // Reuse same subject list as PYQ
   const list = subjects[key] || [];
   const container = document.getElementById('fsmSubjectList');
 
@@ -943,7 +1120,7 @@ function loadFsmSubjects() {
   }
 
   container.innerHTML = list.map((subj, i) => `
-    <div class="fsm-subject-card" onclick="openFsmSubject('${subj.replace(/'/g,"\\'")}')">
+    <div class="fsm-subject-card" onclick="openFsmSubject('${subj.replace(/'/g,"\\'").replace(/"/g,'&quot;')}')">
       <div class="fsm-subject-num">${i+1}</div>
       <div class="subject-info">
         <div class="subject-name">${subj}</div>
